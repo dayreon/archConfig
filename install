@@ -1,0 +1,6 @@
+sudo pacman -S numlockx redshift
+
+# grub
+sudo su
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+grub-mkconfig > /boot/grub/grub.cfg
